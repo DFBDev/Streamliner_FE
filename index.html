@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>STREAMLINER</title>
+</head>
+<body>
+    <header>STREAMLINER // A simple interface for recording and sending appointment info.</header>
+    <main>
+        <div class="form1Container">
+            <form id="form">
+                <label for="fn">First Name:</label>
+                <input type="text" name="fn" id="fn" placeholder="Student first name.">
+                <label for="ln">Last Name:</label>
+                <input type="text" name="ln" id="ln" placeholder="Student last name.">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subject" placeholder="Session subject.">
+                <label for="timein">Time-in:</label>
+                <input type="text" name="timein" id="timein" placeholder="Session start time.">
+                <label for="timeout">Time-out:</label>
+                <input type="text" name="timeout" id="timeout" placeholder="Session end time.">
+                <label for="dbpass">Database Password:</label>
+                <input type="password" name="dbpass" id="dbpass" placeholder="PW for data submission.">
+                <input type="submit" name="submitButton" id="submitButton">
+            </form>
+        </div>
+        <div class="form2Container">
+            <form id="form2">
+                <label for="emailOrigin">Origin:</label>
+                <input type="email" name="emailOrigin" id="emailOrigin" placeholder="Email Origin.">
+                <label for="emailDest">Destination:</label>
+                <input type="email" name="emailDest" id="emailDest" placeholder="Email destination.">
+                <label for="smtpPW">SMTP Password:</label>
+                <input type="password" name="smtpPW" id="smtpPW" placeholder="PW for email submission.">
+                <label for="dbpass2">Database Password:</label>
+                <input type="password" name="dbpass2" id="dbpass2" placeholder="PW for data pull.">
+                <input type="submit" name="sendButton" id="sendButton" value="Send">
+            </form>
+            <section class="infoBox">
+                Submission Status:
+                <div id="resIndicator"></div>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="./handlers/submissionHandler.js"></script>
+<script src="./handlers/smtpHandler.js"></script>
+</html>
