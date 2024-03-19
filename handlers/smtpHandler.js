@@ -1,6 +1,6 @@
+//Version 1.0.0
 let form2 = document.getElementById("form2");
 let altValidText = document.createTextNode("Email has been sent!");
-
 
 form2.addEventListener("submit", async (event2) => {
     event2.preventDefault();

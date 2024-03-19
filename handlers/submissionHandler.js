@@ -1,3 +1,4 @@
+//Version 1.0.0
 let form = document.getElementById("form");
 let resIndicator = document.getElementById("resIndicator")
 let validText = document.createTextNode("Data has been sent!");
