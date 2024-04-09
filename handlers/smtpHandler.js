@@ -21,6 +21,6 @@ form2.addEventListener("submit", async (event2) => {
     const res2 = await fetch('http://localhost:8080/smtp', {method:"POST", body: data2})
     
     //Text appendment & coloring dependant on server status code response.
-    res2.status == 200 ? resIndicator.appendChild(altValidText) : resIndicator.appendChild(altInvalidText);
-    res2.status == 200 ? resIndicator.style.color = 'Green' : resIndicator.style.color = 'Red';
+    res2.status == 204 ? resIndicator.appendChild(altValidText) : resIndicator.appendChild(altInvalidText);
+    res2.status == 204 ? resIndicator.style.color = 'Green' : resIndicator.style.color = 'Red';
 })

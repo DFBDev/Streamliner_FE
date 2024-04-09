@@ -19,9 +19,9 @@ form.addEventListener("submit", async (event) => {
     
     //Routing form data to fetch method and performing post request.
     const data = new URLSearchParams(new FormData(form));
-    const res = await fetch('http://localhost:8080/', {method:"POST", body: data})
+    const res = await fetch('http://localhost:8080/', {method:"POST", body: data});
 
     //Text appendment & coloring dependant on server status code response.
-    res.status == 200 ? resIndicator.appendChild(validText) : resIndicator.appendChild(invalidText);
-    res.status == 200 ? resIndicator.style.color = 'Green' : resIndicator.style.color = 'Red';
+    res.status == 204 ? resIndicator.appendChild(validText) : resIndicator.appendChild(invalidText);
+    res.status == 204 ? resIndicator.style.color = 'Green' : resIndicator.style.color = 'Red'; 
 })
