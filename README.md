@@ -15,6 +15,10 @@ Contains fields for email origin, email destination, SMTP password and local dat
 * `/handlers/submissionHandler.js`: Contains fetch function for executing post request and sending Student Information Form data as payload to the "/" endpoint. 
 * `/handlers/smtpHandler`: Responsible for executing POST request to "/smtp" endpoint using fetch function. Pulls form data from SMTP Service Form and sends it as payload to said endpoint.
 
+## Releases
+* v1.0.0 - First release. Contains all necessary code for UI and sending data.
+* v1.0.1 - Changed status-code handlers from 200 to 204. Organized CSS alphabetically.
+
 ## Changing/Modifying
 **COMING SOON**
 
