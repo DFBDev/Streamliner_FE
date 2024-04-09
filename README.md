@@ -9,4 +9,13 @@ Contains fields for student first name, last name, subject, time-in, time-out an
 ## SMTP Service Form
 Contains fields for email origin, email destination, SMTP password and local database password. Also uses fetch method in JavaScript to perform POST requests to the "/smtp" endpoint to queue an SMTP request via google's SMTP service. Effectively allows for the extraction and delivery of current student records within local database to desired email destination.
 
+## Project Structure
+* `/Index.html`: Contains HTML boilerplate, forms, font links and script links. As of v1.0.0, it is the only HTML file.
+* `/styles.css`: Contains stylings for `Index.html`. As of v1.0.0, it is the only CSS file.
+* `/handlers/submissionHandler.js`: Contains fetch function for executing post request and sending Student Information Form data as payload to the "/" endpoint. 
+* `/handlers/smtpHandler`: Responsible for executing POST request to "/smtp" endpoint using fetch function. Pulls form data from SMTP Service Form and sends it as payload to said endpoint.
+
+## Changing/Modifying
+**COMING SOON**
+
 ### Made in pure HTML, CSS and JavaScript.
