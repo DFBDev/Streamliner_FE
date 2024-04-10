@@ -20,6 +20,6 @@ Contains fields for email origin, email destination, SMTP password and local dat
 * v1.0.1 - Changed status-code handlers from 200 to 204. Organized CSS alphabetically.
 
 ## Changing/Modifying
-**COMING SOON**
+** COMING SOON **
 
 ### Made in pure HTML, CSS and JavaScript.
